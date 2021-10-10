@@ -7,7 +7,7 @@
 
 3. Then, using 'git clone https://gitlab.com/saumyalavania97/git-exercises.git' I cloned the whole project.
 
-# Scenario-3
+# Scenario-2
 
 4. 'mkdir saumya'
    new empty folder
