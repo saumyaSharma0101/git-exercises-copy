@@ -85,4 +85,15 @@ delete branch remotely:
 24. commit all changes in main using:
     git add . --> git commit -m "stashing completed" --> git push
 
-25.
+# Scenario-7
+
+25. git branch exercise/hooks --> created new branch
+    git checkout exercise/hooks --> switch to new branch from main branch
+    cd .git --> got git folder
+    cd hooks --> now into hooks folder
+    type NUL >> post-commit --> created post-commit file
+    code . --> add content in file using code editor (vs code)
+    cd .. --> got back to git exercise folder
+    git add . --> git commit -m "updated hooks" --> git push origin exercise/hooks
+    commited and pushed changes in exercise/hooks branch
+26. created merge request and then merged these hooks to main using UI
