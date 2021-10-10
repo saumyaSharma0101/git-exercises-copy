@@ -35,4 +35,31 @@
     Now in code editor make the required changes like in our case we required both the changes so click on 'both changes'
     and commit the changes using 'git commit -am "conflict resolved"' --> 'git push origin exercise/conflict-resolution'
     now go to gitlab UI and merge the branches in merge request section and source branch has been deleted when we choose that option along with merge request.
-16.
+
+# Scenario-4
+
+16. 'git branch exercise/diff-checker' --> new branch created named diff-checker
+    git checkout exercise/diff-checker --> switch to new branch
+    now edit content of text file to :
+    My name used to be saumya sharma
+    My name has always been saumya sharma
+    My name can be saumya sharma
+
+Now commit the changes using 'git commit -am "updated text file in diff-checker"'
+commands --> 'git diff main..exercise/diff-checker' and 'git diff exercise/diff-checker..main' used to check the difference between both the files content.
+added screenshots for the same
+
+# Scenario-5
+
+17. 'git push origin exercise/diff-checker' --> push the changes in new branch
+
+To delete "exercise/conflict-resolution" and "exercise/diff-checker" branches both locally and remotely :
+
+delete branch locally:
+
+'git branch -d branch name' give error "The branch 'exercise/diff-checker' is not fully merged"
+then use 'git branch -D branch name' --> now branch deleted without merging error locally
+
+delete branch remotely:
+
+'git push origin --delete exercise/diff-checker'
