@@ -63,3 +63,26 @@ then use 'git branch -D branch name' --> now branch deleted without merging erro
 delete branch remotely:
 
 'git push origin --delete exercise/diff-checker'
+
+# Scenario-6
+
+18. 'git branch exercise/stash-scenario' --> created new branch
+    git checkout main --> switched to main branch
+19. added a new commit by editing the file my_name.txt usind commands:
+    edited in code editor:
+    My name used to be saumya sharma
+    My name has always been saumya sharma
+    I am about to check git stashing
+    'git commit -am "updated text file using stashing"' --> commited changes
+20. 'git checkout exercise/stash-scenario' --> switched to new branch
+    edited in code editor:  
+     My name used to be saumya sharma
+    My name has always been saumya sharma
+    I have successfully tested git stashing
+21. 'git stash' --> to save changes of new branch without commiting
+22. 'git checkout main' --> switch back to main branch
+23. to apply those changes use: 'git stash apply' --> now in code editor "accept both changes"
+24. commit all changes in main using:
+    git add . --> git commit -m "stashing completed" --> git push
+
+25.
