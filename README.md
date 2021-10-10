@@ -97,3 +97,15 @@ delete branch remotely:
     git add . --> git commit -m "updated hooks" --> git push origin exercise/hooks
     commited and pushed changes in exercise/hooks branch
 26. created merge request and then merged these hooks to main using UI
+
+# Scenario-8
+
+27. created new repository "git-exercise-copy" using github UI and
+28. then to copy and push all changes to new repository use:
+    git remote add origin-3 https://github.com/saumyaSharma0101/git-exercises-copy.git
+    git push --all origin-3
+
+# Scenario-9
+
+29. 'git tag -a 1.0.0 -m "New release for 1.0.0"' --> created a tag
+30. 'git push origin 1.0.0' --> push tag in main branch
