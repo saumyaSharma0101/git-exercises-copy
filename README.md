@@ -15,5 +15,9 @@
    text file created
 6. 'echo My name is saumya sharma > my_name.txt'
    content added to the text file
-7. 'git add . --> git commit -m "added text file"'
+7. 'git add . --> git commit -m "added text file" --> git push'
    commiting the file
+
+# Scenario-3
+
+8.
